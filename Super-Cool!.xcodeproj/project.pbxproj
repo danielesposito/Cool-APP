@@ -12,6 +12,7 @@
 		FAD6514B1C9975060034A8D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD651491C9975060034A8D5 /* Main.storyboard */; };
 		FAD6514D1C9975060034A8D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD6514C1C9975060034A8D5 /* Assets.xcassets */; };
 		FAD651501C9975060034A8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD6514E1C9975060034A8D5 /* LaunchScreen.storyboard */; };
+		FAD6515C1C9983990034A8D5 /* Colourful-starburst-Background in Resources */ = {isa = PBXBuildFile; fileRef = FAD6515B1C9983990034A8D5 /* Colourful-starburst-Background */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FAD6514C1C9975060034A8D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD6514F1C9975060034A8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD651511C9975060034A8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD6515B1C9983990034A8D5 /* Colourful-starburst-Background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Colourful-starburst-Background"; path = "../../../../Downloads/Colourful-starburst-Background"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				FAD651451C9975060034A8D5 /* AppDelegate.swift */,
-				FAD651471C9975060034A8D5 /* ViewController.swift */,
 				FAD651491C9975060034A8D5 /* Main.storyboard */,
 				FAD6514C1C9975060034A8D5 /* Assets.xcassets */,
 				FAD6514E1C9975060034A8D5 /* LaunchScreen.storyboard */,
 				FAD651511C9975060034A8D5 /* Info.plist */,
+				FAD651471C9975060034A8D5 /* ViewController.swift */,
+				FAD6515B1C9983990034A8D5 /* Colourful-starburst-Background */,
 			);
 			path = "Super-Cool!";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD651501C9975060034A8D5 /* LaunchScreen.storyboard in Resources */,
+				FAD6515C1C9983990034A8D5 /* Colourful-starburst-Background in Resources */,
 				FAD6514D1C9975060034A8D5 /* Assets.xcassets in Resources */,
 				FAD6514B1C9975060034A8D5 /* Main.storyboard in Resources */,
 			);

@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Super_Cool_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1269" translatesAutoresizingMaskIntoConstraints="NO" id="9HP-Z3-G3x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-9Z-K4H">
+                                <rect key="frame" x="20" y="28" width="335" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bzf-9Z-K4H" secondAttribute="height" multiplier="335:99" id="Kc1-yL-I4T"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSf-ee-8Em">
+                                <rect key="frame" x="92" y="336" width="190" height="30"/>
+                                <state key="normal" title="Make me Super Cool!"/>
+                                <connections>
+                                    <action selector="makeMeNotSoUnCool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXm-uK-52K"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bzf-9Z-K4H" secondAttribute="trailing" constant="20" id="46Q-st-3gz"/>
+                            <constraint firstItem="SSf-ee-8Em" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CIT-0h-CBh"/>
+                            <constraint firstItem="bzf-9Z-K4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="CPM-uN-Mag"/>
+                            <constraint firstAttribute="trailing" secondItem="9HP-Z3-G3x" secondAttribute="trailing" id="L2a-5E-A50"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9HP-Z3-G3x" secondAttribute="bottom" id="Lnd-KH-CtH"/>
+                            <constraint firstItem="9HP-Z3-G3x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NWh-3t-Du6"/>
+                            <constraint firstItem="9HP-Z3-G3x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QMg-HV-qeW"/>
+                            <constraint firstItem="bzf-9Z-K4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUU-cy-CIF"/>
+                            <constraint firstItem="SSf-ee-8Em" firstAttribute="top" secondItem="bzf-9Z-K4H" secondAttribute="bottom" constant="209" id="bfK-1D-W41"/>
+                            <constraint firstItem="bzf-9Z-K4H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hs6-dT-LH2"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="coolBg" destination="9HP-Z3-G3x" id="4tO-Xt-P6f"/>
+                        <outlet property="coolLogo" destination="bzf-9Z-K4H" id="p2X-Br-dVm"/>
+                        <outlet property="uncoolButton" destination="SSf-ee-8Em" id="l5T-aD-AWI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="439.5" y="429.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1269" width="1200" height="1200"/>
+        <image name="Boom-App" width="511" height="94"/>
+    </resources>
 </document>
